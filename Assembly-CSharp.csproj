@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Cronometro.cs" />
      <Compile Include="Assets\Scripts\MoverInimigo.cs" />
      <Compile Include="Assets\Scripts\Mover_Player.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <None Include="Assets\Objects\Zergs\Rhino\Sheder\StandardDoubleSided.shader" />
      <None Include="Assets\Objects\Vulcan\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
      <None Include="Assets\Objects\Player\TrollGiant\readMe.txt" />
