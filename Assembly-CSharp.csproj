@@ -53,7 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Objects\Vulcan\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
+     <Compile Include="Assets\Scripts\Coletavel.cs" />
+     <Compile Include="Assets\Scripts\Cronometro.cs" />
      <Compile Include="Assets\Scripts\MoverInimigo.cs" />
      <Compile Include="Assets\Scripts\Mover_Player.cs" />
      <None Include="Assets\Objects\Zergs\Rhino\Sheder\StandardDoubleSided.shader" />
