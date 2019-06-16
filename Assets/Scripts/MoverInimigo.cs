@@ -21,6 +21,7 @@ public class MoverInimigo : MonoBehaviour
     {
         while(target != null)
         {
+            
             //navMeshAgent.SetDestination(target.position);
             yield return new WaitForSeconds(0.25f);
         }
