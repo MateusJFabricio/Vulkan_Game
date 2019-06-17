@@ -13,7 +13,6 @@ public class Cronometro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tempo = 5;
         txtCronometro.text = tempo.ToString();
         StartCoroutine(IniciarContagem());
     }
