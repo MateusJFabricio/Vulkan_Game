@@ -48,7 +48,7 @@ public class ControleJogo : MonoBehaviour
 
     public void RemoverTempo()
     {
-        tempo = tempo - 15;
+        tempo = tempo - 2;
         AtualizarOverlayTempo();
     }
 

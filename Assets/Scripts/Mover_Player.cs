@@ -16,6 +16,8 @@ public class Mover_Player : MonoBehaviour
     int animator_attack, animator_move, animator_hit, animator_die, animator_idle;
 
     public ControleJogo controleJogo;
+    private MoverInimigo moverInimigo;
+    private MoverInimigo localMoverInimigo;
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +25,8 @@ public class Mover_Player : MonoBehaviour
         controleJogo = GameObject.FindGameObjectWithTag("GameController").GetComponent<ControleJogo>();
         controleVelocidadeTemporaria = 0;
         animator = GetComponent<Animator>();
-        animator_attack = Animator.StringToHash("Attack");
-        animator_move = Animator.StringToHash("Move");
-        animator_hit = Animator.StringToHash("Hit");
-        animator_die = Animator.StringToHash("Die");
-        animator_idle = Animator.StringToHash("Idle");
-
         controller = GetComponent<CharacterController>();
-
+        moverInimigo = GameObject.FindGameObjectWithTag("Inimigo").GetComponent<MoverInimigo>();
     }
 
     // Update is called once per frame
@@ -38,7 +34,6 @@ public class Mover_Player : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
             moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
@@ -62,8 +57,18 @@ public class Mover_Player : MonoBehaviour
         {
             animator.SetBool("Descansar", false);
             animator.SetBool("Atacar", true);
-        }else
+            if (localMoverInimigo != null)
+            {
+                localMoverInimigo.Animacao_Apanhar(true);
+                localMoverInimigo = null;
+            }
+
+        }
+        else
+        {
             animator.SetBool("Atacar", false);
+            moverInimigo.Animacao_Apanhar(false);
+        }
 
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
@@ -89,6 +94,7 @@ public class Mover_Player : MonoBehaviour
         if (other.CompareTag("Inimigo"))
         {
             animator.SetBool("Apanhar", true);
+            localMoverInimigo = other.gameObject.GetComponent<MoverInimigo>();
         }
     }
 
