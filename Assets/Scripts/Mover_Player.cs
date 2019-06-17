@@ -9,7 +9,9 @@ public class Mover_Player : MonoBehaviour
     public float gravity = 20.0F;
     public float rotateSpeed = 3.0F;
     private Vector3 moveDirection = Vector3.zero;
-    private float velocidadeTemporaria;
+    private float controleVelocidadeTemporaria;
+
+    public ControleJogo controleJogo;
 
     Animator anim;
     int jumpHash;
@@ -18,7 +20,8 @@ public class Mover_Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidadeTemporaria = 0;
+        controleJogo = GameObject.FindGameObjectWithTag("GameController").GetComponent<ControleJogo>();
+        controleVelocidadeTemporaria = 0;
         anim = GetComponent<Animator>();
         jumpHash = Animator.StringToHash("Jump");
         runStateHash = Animator.StringToHash("Base Layer.Run");
@@ -51,19 +54,21 @@ public class Mover_Player : MonoBehaviour
 
     public void AdicionarVelocidade()
     {
-        velocidadeTemporaria += 10;
+        controleVelocidadeTemporaria += 10;
         speed *= 2;
+        controleJogo.AdicionarOverlayVelocidade();
         StartCoroutine(ControlarVelocidadeTemporaria());
     }
 
     private IEnumerator ControlarVelocidadeTemporaria()
     {
-        while(velocidadeTemporaria >= 0)
+        while(controleVelocidadeTemporaria >= 0)
         {
             yield return new WaitForSeconds(1);
-            velocidadeTemporaria--;
+            controleVelocidadeTemporaria--;
         }
         speed = speed / 2;
+        controleJogo.RemoverOverlayVelocidade();
     }
 
 }

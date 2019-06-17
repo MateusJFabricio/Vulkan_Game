@@ -13,14 +13,14 @@ public class DestruirColisao : MonoBehaviour
     private AnimationScript animationScript;
     public float tempoEsperaAntesDestruir;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         animationScript = GetComponent<AnimationScript>();
         moverPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Mover_Player>();
         controleJogo = GameObject.FindGameObjectWithTag("GameController").GetComponent<ControleJogo>();
     }
-    // Update is called once per frame
+    
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
