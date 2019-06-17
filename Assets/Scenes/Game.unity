@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rhino_PBR (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7970071392186691662, guid: 2357bdd96b6ce844fa79e39acd2bdbbc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
 --- !u!1 &37644910 stripped
@@ -1423,6 +1428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rhino_PBR (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7970071392186691662, guid: 2357bdd96b6ce844fa79e39acd2bdbbc,
+        type: 3}
+      propertyPath: tempoEntreAtaqueInimigo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
 --- !u!1001 &1185394410
@@ -1432,6 +1442,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 227150365}
     m_Modifications:
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_Name
+      value: Lava_simple
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -184.0542
@@ -1483,22 +1509,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
       propertyPath: m_LocalScale.y
       value: 901.26733
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
-      propertyPath: m_Name
-      value: Lava_simple
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
-      propertyPath: m_TagString
-      value: Lava
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
       propertyPath: uvAnimationRate.x
@@ -1638,6 +1648,11 @@ PrefabInstance:
     - target: {fileID: 153050, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
       propertyPath: m_Name
       value: Rhino_PBR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970071392186691662, guid: 2357bdd96b6ce844fa79e39acd2bdbbc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
