@@ -10,7 +10,7 @@ public class Mover_Player : MonoBehaviour
     public float rotateSpeed = 3.0F;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
-    private bool pulando = false;
+    private float velocidadeTemporaria;
 
     Animator animator;
     int animator_attack, animator_move, animator_hit, animator_die, animator_idle;
@@ -18,6 +18,7 @@ public class Mover_Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        velocidadeTemporaria = 0;
         animator = GetComponent<Animator>();
         animator_attack = Animator.StringToHash("Attack");
         animator_move = Animator.StringToHash("Move");
@@ -56,7 +57,7 @@ public class Mover_Player : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            animator.SetBool("Mover", false);
+            animator.SetBool("Descansar", false);
             animator.SetBool("Atacar", true);
         }else
             animator.SetBool("Atacar", false);
@@ -86,5 +87,22 @@ public class Mover_Player : MonoBehaviour
         {
             animator.SetBool("Apanhar", true);
         }
+    }
+
+    public void AdicionarVelocidade()
+    {
+        velocidadeTemporaria += 10;
+        speed *= 2;
+        StartCoroutine(ControlarVelocidadeTemporaria());
+    }
+
+    private IEnumerator ControlarVelocidadeTemporaria()
+    {
+        while (velocidadeTemporaria >= 0)
+        {
+            yield return new WaitForSeconds(1);
+            velocidadeTemporaria--;
+        }
+        speed = speed / 2;
     }
 }
