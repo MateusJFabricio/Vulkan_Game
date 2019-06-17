@@ -53,14 +53,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DestruirColisao.cs" />
      <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Objects\Vulcan\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\Scripts\Coletavel.cs" />
-     <Compile Include="Assets\Scripts\Cronometro.cs" />
+     <Compile Include="Assets\Scripts\ControleJogo.cs" />
+     <Compile Include="Assets\Scripts\DestruirColisao.cs" />
      <Compile Include="Assets\Scripts\MoverInimigo.cs" />
      <Compile Include="Assets\Scripts\Mover_Player.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
+     <Compile Include="Assets\Scripts\TipoColetavel.cs" />
      <None Include="Assets\Objects\Zergs\Rhino\Sheder\StandardDoubleSided.shader" />
      <None Include="Assets\Objects\Vulcan\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
      <None Include="Assets\Objects\Player\TrollGiant\readMe.txt" />
