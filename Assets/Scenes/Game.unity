@@ -340,6 +340,20 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 20
   rotateSpeed: 3
+--- !u!136 &369945482
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369945479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.72
+  m_Height: 2.3821335
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.69106686, z: 0}
 --- !u!143 &369945484
 CharacterController:
   m_ObjectHideFlags: 0
