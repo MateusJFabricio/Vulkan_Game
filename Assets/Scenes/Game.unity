@@ -1170,6 +1170,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava_simple
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d2debcb3c417b07419457484a835eb7d, type: 3}
       propertyPath: uvAnimationRate.x
       value: 0.01
@@ -1493,15 +1501,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013930652492, guid: 134568deae123e7488798bf153729a7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.7
+      value: 34.2
       objectReference: {fileID: 0}
     - target: {fileID: 4000013930652492, guid: 134568deae123e7488798bf153729a7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.7
+      value: -7.44
       objectReference: {fileID: 0}
     - target: {fileID: 4000013930652492, guid: 134568deae123e7488798bf153729a7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.1
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 4000013930652492, guid: 134568deae123e7488798bf153729a7a, type: 3}
       propertyPath: m_LocalRotation.x
