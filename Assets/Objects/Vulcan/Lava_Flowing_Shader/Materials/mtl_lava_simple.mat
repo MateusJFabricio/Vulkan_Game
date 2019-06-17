@@ -26,7 +26,7 @@ Material:
     - _LavaTex:
         m_Texture: {fileID: 2800000, guid: bc3e2354359078643b81eaca8974d63c, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0.0775017, y: 0}
+        m_Offset: {x: 0.1979216, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: aed369d136cf0174e8e04dfb34567e6a, type: 3}
         m_Scale: {x: 1, y: 1}
