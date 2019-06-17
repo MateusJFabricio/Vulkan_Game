@@ -55,11 +55,6 @@
   <ItemGroup>
      <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\Objects\Vulcan\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
-     <Compile Include="Assets\Particle Ingredient Pack\Script\csColorChangerinSampleScene.cs" />
-     <Compile Include="Assets\Particle Ingredient Pack\Script\csDemoScenceControl.cs" />
-     <Compile Include="Assets\Particle Ingredient Pack\Script\csMouseOrbit.cs" />
-     <Compile Include="Assets\Particle Ingredient Pack\Script\csParticleMake.cs" />
-     <Compile Include="Assets\Particle Ingredient Pack\Script\csRotate.cs" />
      <Compile Include="Assets\Scripts\Coletavel.cs" />
      <Compile Include="Assets\Scripts\Cronometro.cs" />
      <Compile Include="Assets\Scripts\MoverInimigo.cs" />
